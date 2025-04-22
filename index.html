@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo">ShopKart</a>
+            <span class="logo-tagline">Explore <span>Demo</span></span>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>🔍</button>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" class="nav-item login-btn">Login</a>
+            <a href="#" class="nav-item">Become a Seller</a>
+            <a href="#" class="nav-item">More</a>
+            <a href="#" class="nav-item">
+                <span class="cart-icon">🛒</span>
+                Cart
+                <span class="cart-badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Categories Navigation -->
+    <div class="categories-nav">
+        <a href="#" class="category-item">
+            <div class="category-icon">📱</div>
+            <span class="category-label">Mobiles</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">💻</div>
+            <span class="category-label">Electronics</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">👕</div>
+            <span class="category-label">Fashion</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">🪑</div>
+            <span class="category-label">Furniture</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">🛒</div>
+            <span class="category-label">Grocery</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">📚</div>
+            <span class="category-label">Books</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">✈️</div>
+            <span class="category-label">Travel</span>
+        </a>
+        <a href="#" class="category-item">
+            <div class="category-icon">🎮</div>
+            <span class="category-label">Gaming</span>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Banner -->
+        <div class="banner">
+            <img src="banner.png" alt="Promotional Banner" class="banner-img">
+        </div>
+        
+        <!-- Deals of the Day -->
+        <div class="deals-section">
+            <div class="section-header">
+                <h2 class="section-title">Deals of the Day</h2>
+                <a href="#" class="view-all-btn">VIEW ALL</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="1">
+                    <img src="smart phone.png" alt="Smartphone" class="product-img">
+                    <h3 class="product-title">Galaxy S25 Ultra</h3>
+                    <div class="product-price">₹74,999 <span>₹89,999</span></div>
+                    <div class="discount">17% off</div>
+                    <div>
+                        <span class="rating">4.7 ★</span>
+                        <span class="reviews">(8,342)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="2">
+                    <img src="laptop.png" alt="Laptop" class="product-img">
+                    <h3 class="product-title">MacBook Air (2025)</h3>
+                    <div class="product-price">₹89,999 <span>₹94,999</span></div>
+                    <div class="discount">5% off</div>
+                    <div>
+                        <span class="rating">4.9 ★</span>
+                        <span class="reviews">(3,219)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="3">
+                    <img src="headphone.jpeg" alt="Headphones" class="product-img">
+                    <h3 class="product-title">NoiseCancel Pro Headphones</h3>
+                    <div class="product-price">₹1,499 <span>₹3,999</span></div>
+                    <div class="discount">63% off</div>
+                    <div>
+                        <span class="rating">4.5 ★</span>
+                        <span class="reviews">(15,651)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-product-id="4">
+                    <img src="smart watch.jpeg" alt="Smartwatch" class="product-img">
+                    <h3 class="product-title">FitPro Smartwatch</h3>
+                    <div class="product-price">₹2,499 <span>₹5,999</span></div>
+                    <div class="discount">58% off</div>
+                    <div>
+                        <span class="rating">4.3 ★</span>
+                        <span class="reviews">(9,876)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-product-id="5">
+                    <img src="DSLR.jpeg" alt="Camera" class="product-img">
+                    <h3 class="product-title">ClickPro DSLR Camera</h3>
+                    <div class="product-price">₹49,999 <span>₹59,999</span></div>
+                    <div class="discount">17% off</div>
+                    <div>
+                        <span class="rating">4.8 ★</span>
+                        <span class="reviews">(3,421)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="5">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top Offers -->
+        <div class="deals-section">
+            <div class="section-header">
+                <h2 class="section-title">Top Offers</h2>
+                <a href="#" class="view-all-btn">VIEW ALL</a>
+            </div>
+            
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <img src="electonic sell.jpeg" alt="Electronics Sale" class="offer-img">
+                    <div class="offer-label">Up to 70% Off on Electronics</div>
+                </div>
+                <div class="offer-card">
+                    <img src="fashion sell.jpeg" alt="Fashion Sale" class="offer-img">
+                    <div class="offer-label">End of Season Sale</div>
+                </div>
+                <div class="offer-card">
+                    <img src="home appliances.jpeg" alt="Home Appliances" class="offer-img">
+                    <div class="offer-label">Home Appliances from ₹599</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Featured Products -->
+        <div class="deals-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="#" class="view-all-btn">VIEW ALL</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="6">
+                    <img src="TV.jpeg" alt="TV" class="product-img">
+                    <h3 class="product-title">CineView 55" QLED Smart TV</h3>
+                    <div class="product-price">₹49,999 <span>₹69,999</span></div>
+                    <div class="discount">29% off</div>
+                    <div>
+                        <span class="rating">4.6 ★</span>
+                        <span class="reviews">(5,342)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="6">Add to Cart</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="7">
+                    <img src="coffee maker.jpeg" alt="Coffee Maker" class="product-img">
+                    <h3 class="product-title">BrewMaster Coffee Machine</h3>
+                    <div class="product-price">₹7,499 <span>₹11,999</span></div>
+                    <div class="discount">38% off</div>
+                    <div>
+                        <span class="rating">4.4 ★</span>
+                        <span class="reviews">(2,198)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="7">Add to Cart</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="8">
+                    <img src="running shoes.jpeg" alt="Running Shoes" class="product-img">
+                    <h3 class="product-title">SprintPro Running Shoes</h3>
+                    <div class="product-price">₹3,699 <span>₹6,999</span></div>
+                    <div class="discount">47% off</div>
+                    <div>
+                        <span class="rating">4.5 ★</span>
+                        <span class="reviews">(12,543)</span>
+                    </div>
+                    <button class="add-to-cart" data-product-id="8">Add to Cart</button>
